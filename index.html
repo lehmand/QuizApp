@@ -20,20 +20,21 @@
           <nav class="navbar bg-primary flex-column" data-bs-theme="dark">
             <img src="./assets/img/logo.png" alt="" class="navImage">
             <div class="navLinks">
-              <span class="navElement" >HTML</span>
-              <span class="navElement" >CSS</span>
-              <span class="navElement" >JavaScript</span>
+              <span class="navElement" onclick="loadHTML()">HTML</span>
+              <span class="navElement" onclick="loadCSS()">CSS</span>
+              <span class="navElement" onclick="loadJavascript()">JavaScript</span>
             </div>
           </nav>
         </div>
 
-        <div class="rightBox">
+        <div class="rightBox" id="quizbox">
           <h1 class="welcomeText">Viel Spass beim Quizzen</h1>
           <span>Welches Quiz möchtest du spielen?</span>
         </div>
       </div>
     </div>
 
+    <script src="./scripts/templates.js"></script>
     <script src="./scripts/questions.js"></script>
     <script src="./scripts/script.js"></script>
 </body>

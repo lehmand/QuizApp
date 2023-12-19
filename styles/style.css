@@ -8,12 +8,6 @@ body {
     align-items: center;
 }
 
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .contentBox {
     display: flex;
 }
@@ -30,9 +24,17 @@ body {
 }
 
 .navElement {
-    padding: 16px 16px;
+    margin: 16px;
     color: white;
     font-size: 24px;
+}
+
+.navElement:hover {
+    cursor: pointer;
+}
+
+.welcomeText {
+    padding: 0 64px;
 }
 
 .navbar {
@@ -46,5 +48,19 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 0 8px 8px 0;
-    padding: 128px;
+    max-height: 80%;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-img-top {
+    height: 196px;
+}
+
+.answerOption:hover {
+    cursor: pointer;
 }

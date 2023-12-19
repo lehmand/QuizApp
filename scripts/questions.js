@@ -15,17 +15,17 @@ let htmlQuestions = [
     },
     {
         'question': 'Choose the correct HTML element for the largest heading',
-        'answer1': '<h1>',
-        'answer2': '<h6>',
-        'answer3': '<head>',
+        'answer1': 'h1',
+        'answer2': 'h6',
+        'answer3': 'head',
         'right_answer': 1
     },
     {
-        'question': 'Choose the correct HTML element to define a important text',
-        'answer1': '<b>',
-        'answer2': '<strong>',
-        'answer3': '<i>',
-        'right_answer': 2
+        'question': 'An iframe is used to display a web page within a web page.',
+        'answer1': 'True',
+        'answer2': 'False',
+        'answer3': 'There is no such thing as an iframe',
+        'right_answer': 1
     },
 ];
 
@@ -39,12 +39,11 @@ let cssQuestions = [
     },
 
     {
-        'question': 'What is the correct CSS syntax?',
-        'answer1': '{body:color=black;}',
-        'answer2': '{body;color:black;}',
-        'answer3': 'body {color: black;}',
-        'answer4': 'body:color=black;',
-        'right_answer': 3
+        'question': 'Which CSS property controls the text size?',
+        'answer1': 'font-size',
+        'answer2': 'text-size',
+        'answer3': 'font-style',
+        'right_answer': 1
     },
 
     {
@@ -66,19 +65,18 @@ let cssQuestions = [
 
 let javascriptQuestions = [
     {
-        'question': 'Inside which HTML element do we put the JavaScript?',
-        'answer1': '<script>',
-        'answer2': '<scripting>',
-        'answer3': '<javascript>',
-        'answer4': '<jv>',
+        'question': 'Which event occurs when the user clicks on an HTML element?',
+        'answer1': 'onclick',
+        'answer2': 'onmouseover',
+        'answer3': 'onchange',
         'right_answer': 1
     },
 
     {
         'question': 'Where is the correct place to insert a JavaScript?',
-        'answer1': 'The <body> section',
-        'answer2': 'The <head> section',
-        'answer3': 'Both the <head> section and the <body> section are correct',
+        'answer1': 'The body section',
+        'answer2': 'The head section',
+        'answer3': 'Both the head section and the body section are correct',
         'right_answer': 3
     },
 
@@ -86,6 +84,7 @@ let javascriptQuestions = [
         'question': 'The external JavaScript file must contain the <script> tag.',
         'answer1': 'True',
         'answer2': 'False',
+        'answer3': 'Both',
         'right_answer': 2
     },
 
