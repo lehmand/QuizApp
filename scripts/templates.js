@@ -112,3 +112,15 @@ function welcome(){
           <span>Welches Quiz möchtest du spielen?</span>
     `
 }
+
+function endscreenTemplate(){
+    return /*html*/`
+        <div class="">
+            <img src="./assets/img/brainresult.png" class="">
+            <div class="">
+                <span>Test</span>
+                <img src="./assets/img/tropy.png">          
+            </div>
+        </div>
+`
+}

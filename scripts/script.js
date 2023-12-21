@@ -12,8 +12,15 @@ function loadQuestions(choice){
 }
 
 function nextQuestion(choice){
+    let content = document.getElementById('quizbox');
     currentIndex++;
-    loadQuestions(choice);
+    
+    if(currentIndex < htmlQuestions.length || currentIndex < cssQuestions.length || currentIndex < javascriptQuestions.length){
+        loadQuestions(choice);        
+    } else {
+        content.innerHTML = '';
+        content.innerHTML = endscreenTemplate();
+    }
 }
 
 function checkAnswerHTML(option){
