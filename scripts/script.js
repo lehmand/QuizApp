@@ -1,35 +1,19 @@
 let currentIndex = 0;
-let questionJavascript = javascriptQuestions[currentIndex];
 
-
-function loadHTML(){
+function loadQuestions(choice){
     let content = document.getElementById('quizbox');
-    content.innerHTML = htmlTemplate();
+    if(choice == 'html'){
+        content.innerHTML = htmlTemplate();
+    } else if (choice == "css"){
+        content.innerHTML = cssTemplate();
+    } else {
+        content.innerHTML = javascriptTemplate();
+    }
 }
 
-function loadCSS(){
-    let content = document.getElementById('quizbox');
-    content.innerHTML = cssTemplate();
-}
-
-function loadJavascript(){
-    let content = document.getElementById('quizbox');
-    content.innerHTML = javascriptTemplate();
-}
-
-function nextQuestionHTML(){
+function nextQuestion(choice){
     currentIndex++;
-    loadHTML();
-}
-
-function nextQuestionCSS(){
-    currentIndex++;
-    loadCSS();
-}
-
-function nextQuestionJavascript(){
-    currentIndex++;
-    loadJavascript();
+    loadQuestions(choice);
 }
 
 function checkAnswerHTML(option){

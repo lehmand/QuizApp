@@ -81,7 +81,7 @@ let javascriptQuestions = [
     },
 
     {
-        'question': 'The external JavaScript file must contain the <script> tag.',
+        'question': 'The external JavaScript file must contain the script tag.',
         'answer1': 'True',
         'answer2': 'False',
         'answer3': 'Both',

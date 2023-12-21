@@ -27,7 +27,7 @@ function htmlTemplate(){
                     
                     <div class="card-bottom">
                         <span><b>${currentQuestion}</b> of <b>${htmlQuestions.length}</b> Questions</span>
-                        <button class="btn btn-primary" onclick="nextQuestionHTML()" id="nextButton" disabled>Next Question</button>
+                        <button class="btn btn-primary" onclick="nextQuestion('html')" id="nextButton" disabled>Next Question</button>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@ function cssTemplate(){
                     
                     <div class="card-bottom">
                         <span><b>${currentQuestion}</b> of <b>${cssQuestions.length}</b> Questions</span>
-                        <button class="btn btn-primary" onclick="nextQuestionCSS()" id="nextButton" disabled>Next Question</button>
+                        <button class="btn btn-primary" onclick="nextQuestion('css')" id="nextButton" disabled>Next Question</button>
                     </div>
                 </div>
             </div>
@@ -99,7 +99,7 @@ function javascriptTemplate(){
                     
                     <div class="card-bottom">
                         <span><b>${currentQuestion}</b> of <b>${javascriptQuestions.length}</b> Questions</span>
-                        <button class="btn btn-primary" onclick="nextQuestionJavascript()" id="nextButton" disabled>Next Question</button>
+                        <button class="btn btn-primary" onclick="nextQuestion('javascript')" id="nextButton" disabled>Next Question</button>
                     </div>
                 </div>
             </div>
